@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 body {
-  background: linear-gradient(45deg, lightblue, lightSkyblue);
+  background: linear-gradient(45deg, #adb5bd, #ced4da);
   min-height: 100vh;
 }
 
@@ -15,17 +15,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 .searchForm {
   position: relative;
   width: 420px;
   margin: 5px;
   border-radius: 2px;
+  height: 35px;
 }
 .searchForm #searchTxt {
   padding: 5px 10px;
   outline: none;
   width: 100%;
+  height: 100%;
   border-radius: 2px;
   border: 1px solid #000;
 }
@@ -96,14 +101,14 @@ header {
 .add-box .icon {
   height: 78px;
   width: 78px;
-  color: lightskyblue;
+  color: #000;
   font-size: 40px;
   border-radius: 50%;
   justify-content: center;
-  border: 2px dashed lightblue;
+  border: 2px dashed #000;
 }
 .add-box p {
-  color: lightblue;
+  color: #000;
   font-weight: 500;
   margin-top: 20px;
 }
@@ -119,7 +124,7 @@ header {
 }
 .note .details {
   max-height: 165px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .note p {
   font-size: 22px;
@@ -258,7 +263,7 @@ form .row label {
   cursor: pointer;
   font-size: 17px;
   border-radius: 4px;
-  background: rgb(31, 138, 232);
+  background: #70d6ff;
 }
 .note .clicktoview {
   position: absolute;
