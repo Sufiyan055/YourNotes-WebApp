@@ -97,7 +97,6 @@ function updateNote(noteId, title, desc) {
   descTag.value = desc;
   addBtn.innerText = "Update a Note";
   popupTitle.innerText = "Update a Note";
-  console.log(noteId, title, desc);
 }
 
 function viewNote(noteId, title, desc) {
@@ -108,7 +107,6 @@ function viewNote(noteId, title, desc) {
   descTag.value = desc;
   addBtn.innerText = "Note";
   popupTitle.innerText = "Note";
-  console.log(noteId, title, desc);
 }
 
 addBtn.addEventListener("click", (e) => {
